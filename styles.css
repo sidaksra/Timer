@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+    background-image: url("bg.jpg");
+    background-size: cover; 
+    height: 100vh;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 10px;
+    justify-content: center;
+}
+body::before{
+    content: "";
+  background-color: rgba(255, 255, 255, 0.15); /* Adjust the opacity here */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+h1{
+    background-color: white;
+    padding: 1em;
+    font-size: 40px;
+    font-weight: bold;
+    color:black;
+    text-align: center;
+    font-family: 'Black Ops One', cursive;
+    text-transform: uppercase;
+}
+input{
+    margin-top: 25px;
+    padding: 1em;
+    font-size: 14px;
+    border: 1px solid rgb(199, 199, 199);
+}
+
+.myclock {
+    margin-top: 80px;
+    font-size: 100px;
+    color: white;
+    padding: 0.2em;
+    border-radius: 0.1em;
+}
+#days-left{
+    margin-top: 35px;
+    font-size: 25px;
+    color: rgb(255, 181, 45);
+    text-transform: uppercase;
+}
+button{
+    padding: 1em;
+    font-size: 14px;
+    cursor: pointer;
+    background-color:#001725;
+    color: white;
+    border: 1px solid rgb(163, 163, 163);
+}
+button:hover{
+    background-color:#046fad;
+}
+
+#dateEntered{
+    color: white;
+    margin-top: 25px;
+    padding: 0.2em;
+}
+
+@media screen and (max-width:500px) {
+
+    h1{
+        font-size: 22px;
+        background-color: white;
+        margin-bottom: 50px;
+    }
+    #timer{
+        font-size: 40px;
+    }
+
+    input{
+        font-size: 24px !important;
+    }
+
+
+    
+}
